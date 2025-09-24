@@ -22,6 +22,35 @@ backTop?.addEventListener('click', () => window.scrollTo({top:0, behavior:'smoot
 const yearEl = document.getElementById('year');
 if (yearEl) yearEl.textContent = new Date().getFullYear();
 
+window.addEventListener("scroll", function () {
+  const header = document.querySelector("header");
+  if (window.scrollY > 50) {
+    header.classList.add("scrolled");
+  } else {
+    header.classList.remove("scrolled");
+  }
+});
+
+document.querySelector(".search-form").addEventListener("submit", function (e) {
+  e.preventDefault(); // stop actual page reload
+  const query = this.q.value.toLowerCase();
+
+  // Find matching sections by their id or text
+  const sections = document.querySelectorAll("section, div[id]");
+  let found = false;
+
+  sections.forEach(sec => {
+    if (sec.id && sec.id.toLowerCase().includes(query)) {
+      sec.scrollIntoView({ behavior: "smooth" });
+      found = true;
+    }
+  });
+
+  if (!found) {
+    alert("No results found for: " + query);
+  }
+});
+
 // Example: dynamically set calendar timezone if needed
 // const tz = Intl.DateTimeFormat().resolvedOptions().timeZone;
 // const cal = document.getElementById('calendarFrame');
