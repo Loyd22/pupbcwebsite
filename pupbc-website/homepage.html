@@ -6,27 +6,36 @@
   <title>PUP Biñan Campus — Official Website (Homepage)</title>
   <meta name="description" content="Official homepage mockup for the Polytechnic University of the Philippines – Biñan Campus. UI-only, static HTML/CSS/JS." />
   <meta name="theme-color" content="#7a0019" />
-  <link rel="stylesheet" href="asset/css/homepage.css" />
-  <script defer src="asset/js/homepage.js"></script>
+  <link rel="stylesheet" href="homepage.css" />
+  <script defer src="homepage.js"></script>
 </head>
 <body>
   <a href="#content" class="sr-only">Skip to content</a>
 
-  <div class="topbar" role="banner">
-    <div class="container topbar-inner">
-      <div class="seal" aria-hidden="true">PUP</div>
-      <div class="brand" aria-label="Campus name">
-        <span class="u">POLYTECHNIC UNIVERSITY OF THE PHILIPPINES</span>
-        <span class="c">Biñan Campus</span>
-      </div>
+<div class="topbar" role="banner">
+  <div class="container topbar-inner">
+    <div class="seal" aria-hidden="true">
+      <a href="homepage.html">
+      <img src="images/PUPLogo.png" alt="PUP Logo" />
+    </div>
+    <div class="brand" aria-label="Campus name">
+      <span class="u">POLYTECHNIC UNIVERSITY OF THE PHILIPPINES</span>
+      <span class="c">Biñan Campus</span>
     </div>
   </div>
+</div>
+
 
   <header>
     <div class="container nav">
+      <div class="seal seal-nav">
+      <a href="homepage.html">
+        <img src="images/PUPLogo.png" alt="PUP Logo">
+      </a>
+    </div>
       <nav aria-label="Primary" class="menu" id="menu">
         <a class="is-active" href="#">Home</a>
-        <a href="pages/about.html">About</a>
+        <a href="#about">About</a>
         <a href="#programs">Academic Programs</a>
         <a href="#admissions">Admissions</a>
         <a href="#services">Student Services</a>
@@ -35,13 +44,10 @@
         <a href="#events">Events</a>
         <a href="#contact">Contact</a>
       </nav>
-      <div class="actions">
-        <button class="hamburger" id="hamburger" aria-label="Open menu" aria-controls="mobilePanel" aria-expanded="false">
-          <span></span><span></span><span></span>
-        </button>
-        <a class="btn" href="#search" aria-label="Go to site search">🔎 Search</a>
-        <a class="btn primary" href="#admissions">Apply Now</a>
-      </div>
+      <form class="search-form" action="#search" method="get">
+  <input type="text" name="q" placeholder="Search..." aria-label="Search">
+</form>
+
     </div>
     <div class="mobile-panel" id="mobilePanel" aria-hidden="true">
       <nav class="mobile-menu" aria-label="Mobile">
