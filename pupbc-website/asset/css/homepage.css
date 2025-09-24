@@ -34,23 +34,70 @@ img{max-width:100%;height:auto;display:block}
   border-bottom:4px solid var(--gold);
 }
 .topbar-inner{display:flex;align-items:center;gap:.85rem;padding:.65rem 0}
+
 .seal{
-  inline-size:40px; block-size:40px; border-radius:999px;
+  inline-size:70px; block-size:70px; border-radius:999px;
   display:grid;place-items:center; font-weight:700; font-size:.75rem;
   background:#fff2; border:1px solid #fff3; color:#fff;
   box-shadow: inset 0 0 0 2px #fff3;
+  margin-right: 0%
 }
+.seal img {
+  height: 70px;  
+  width: auto;  
+  display: block;
+  transition: transform 0.3s ease; 
+}
+.seal img:hover {
+  transform: scale(1.15); 
+}
+
+.seal-nav {
+  display: none; 
+  height: 70px;
+  width: auto;
+}
+
+header.scrolled .seal-nav {
+  display: block; 
+}
+
+/* search part */
+.search-form {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+  width: 70px;
+}
+
+.search-form input[type="text"] {
+  padding: 0.5rem 0.3rem;
+  border-radius: 0.65rem;
+  border: 1px solid var(--border);
+  outline: none;
+  font-size: 0.95rem;
+}
+
+.search-form input[type="text"]:focus {
+  border-color: var(--maroon);
+  box-shadow: 0 0 0 2px rgba(122, 0, 25, 0.2);
+}
+
+/* text */
+
+
 .brand{display:flex;flex-direction:column}
 .brand .u{font-size:.78rem; opacity:.9; letter-spacing:.08em}
 .brand .c{font-weight:800; font-size:1.125rem; line-height:1.1}
 
 /* Header / Nav */
-header{background:#fff;position:sticky;top:0;z-index:50;border-bottom:1px solid var(--border);box-shadow:0 1px 0 rgba(0,0,0,.04)}
+
+header{background: linear-gradient(90deg, #7a0019 0%, #540013 100%);position:sticky;top:0;z-index:50;border-bottom:1px solid var(--border);box-shadow:0 1px 0 rgba(0,0,0,.04)}
 .nav{display:flex;align-items:center;justify-content:space-between;gap:1rem;padding:.6rem 0}
 .menu{display:flex;gap:.25rem;flex-wrap:wrap}
-.menu a{padding:.55rem .8rem; border-radius:.6rem; font-weight:600; color:#3b3b3b}
-.menu a:hover{background:#f7f7f8}
-.menu a.is-active{color:var(--maroon);}
+.menu a{padding:.55rem .8rem; border-radius:.6rem; font-weight:600; color:#faf8f6}
+.menu a:hover{background:#540013}
+.menu a.is-active{color:#faf8f6;}
 
 .actions{display:flex;gap:.5rem}
 .btn{display:inline-flex;align-items:center;gap:.5rem;padding:.55rem .9rem;border-radius:.65rem;border:1px solid var(--border);background:#fff;box-shadow:0 1px 0 rgba(0,0,0,.03);font-weight:600}
