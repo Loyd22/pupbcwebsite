@@ -1,0 +1,207 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>PUP Biñan Campus — Official Website (Homepage)</title>
+  <meta name="description" content="Official homepage mockup for the Polytechnic University of the Philippines – Biñan Campus. UI-only, static HTML/CSS/JS." />
+  <meta name="theme-color" content="#7a0019" />
+  <link rel="stylesheet" href="asset/css/homepage.css" />
+  <script defer src="asset/js/homepage.js"></script>
+</head>
+<body>
+  <a href="#content" class="sr-only">Skip to content</a>
+
+  <div class="topbar" role="banner">
+    <div class="container topbar-inner">
+      <div class="seal" aria-hidden="true">PUP</div>
+      <div class="brand" aria-label="Campus name">
+        <span class="u">POLYTECHNIC UNIVERSITY OF THE PHILIPPINES</span>
+        <span class="c">Biñan Campus</span>
+      </div>
+    </div>
+  </div>
+
+  <header>
+    <div class="container nav">
+      <nav aria-label="Primary" class="menu" id="menu">
+        <a class="is-active" href="#">Home</a>
+        <a href="pages/about.html">About</a>
+        <a href="#programs">Academic Programs</a>
+        <a href="#admissions">Admissions</a>
+        <a href="#services">Student Services</a>
+        <a href="#announcements">Announcements</a>
+        <a href="#news">News</a>
+        <a href="#events">Events</a>
+        <a href="#contact">Contact</a>
+      </nav>
+      <div class="actions">
+        <button class="hamburger" id="hamburger" aria-label="Open menu" aria-controls="mobilePanel" aria-expanded="false">
+          <span></span><span></span><span></span>
+        </button>
+        <a class="btn" href="#search" aria-label="Go to site search">🔎 Search</a>
+        <a class="btn primary" href="#admissions">Apply Now</a>
+      </div>
+    </div>
+    <div class="mobile-panel" id="mobilePanel" aria-hidden="true">
+      <nav class="mobile-menu" aria-label="Mobile">
+        <a href="#">Home</a>
+        <a href="#about">About</a>
+        <a href="#programs">Academic Programs</a>
+        <a href="#admissions">Admissions</a>
+        <a href="#services">Student Services</a>
+        <a href="#announcements">Announcements</a>
+        <a href="#news">News</a>
+        <a href="#events">Events</a>
+        <a href="#contact">Contact</a>
+      </nav>
+    </div>
+  </header>
+
+  <main id="content">
+    <!-- HERO -->
+    <section class="hero">
+      <div class="container hero-inner">
+        <div>
+          <h1>Serving the Nation through <span class="accent">Quality Public Education</span></h1>
+          <p>
+            Welcome to the PUP <b>Biñan Campus</b> homepage — your hub for announcements, admissions,
+            academic programs, student services, and campus life.
+          </p>
+          <div class="cta">
+            <a href="#admissions" class="btn primary">Admissions</a>
+            <a href="#programs" class="btn">View Programs</a>
+            <a href="#announcements" class="btn">Latest Announcements</a>
+          </div>
+        </div>
+        <aside class="hero-card" aria-label="Latest highlights">
+          <div class="head">Latest Highlights</div>
+          <div class="list">
+            <span class="pill"><span class="date">Sep 24</span> Enrollment schedule posted</span>
+            <span class="pill"><span class="date">Sep 22</span> IT Week 2025 teaser released</span>
+            <span class="pill"><span class="date">Sep 20</span> Scholarship application opens</span>
+          </div>
+        </aside>
+      </div>
+    </section>
+
+    <!-- QUICK LINKS -->
+    <section class="section">
+      <div class="container">
+        <h2>Quick Links</h2>
+        <p class="muted">Jump straight to the most visited sections.</p>
+        <div class="grid cols-4" role="list">
+          <a class="qlink" href="#admissions" role="listitem"><span class="icn">🎓</span><span><b>Admissions</b><br><small class="muted">Requirements & process</small></span></a>
+          <a class="qlink" href="#programs" role="listitem"><span class="icn">📚</span><span><b>Academic Programs</b><br><small class="muted">Courses & curriculum</small></span></a>
+          <a class="qlink" href="#services" role="listitem"><span class="icn">🛟</span><span><b>Student Services</b><br><small class="muted">Scholarships, guidance</small></span></a>
+          <a class="qlink" href="#forms" role="listitem"><span class="icn">📝</span><span><b>Downloadable Forms</b><br><small class="muted">PDFs & templates</small></span></a>
+          <a class="qlink" href="#announcements" role="listitem"><span class="icn">📢</span><span><b>Announcements</b><br><small class="muted">Latest notices</small></span></a>
+          <a class="qlink" href="#news" role="listitem"><span class="icn">📰</span><span><b>News & Updates</b><br><small class="muted">Campus highlights</small></span></a>
+          <a class="qlink" href="#events" role="listitem"><span class="icn">📅</span><span><b>Events Calendar</b><br><small class="muted">Upcoming activities</small></span></a>
+          <a class="qlink" href="#contact" role="listitem"><span class="icn">📍</span><span><b>Contact Us</b><br><small class="muted">Location & email</small></span></a>
+        </div>
+      </div>
+    </section>
+
+    <!-- ANNOUNCEMENTS + EVENTS -->
+    <section class="section" id="announcements">
+      <div class="container split">
+        <article class="card" aria-labelledby="annoHeading">
+          <h3 id="annoHeading">Announcements</h3>
+          <div class="body">
+            <div class="annos">
+              <div class="anno">
+                <strong>Enrollment for 1st Semester AY 2025–2026</strong>
+                <small>Published: Sep 24, 2025 • Category: Registrar</small>
+                <a href="#">Read details</a>
+              </div>
+              <div class="anno">
+                <strong>Scholarship Application Now Open</strong>
+                <small>Published: Sep 20, 2025 • Category: Student Affairs</small>
+                <a href="#">Application link</a>
+              </div>
+              <div class="anno">
+                <strong>Campus ID Validation Schedule</strong>
+                <small>Published: Sep 18, 2025 • Category: Administration</small>
+                <a href="#">View schedule</a>
+              </div>
+            </div>
+            <p class="more-link"><a href="#" aria-label="Go to all announcements">See all announcements →</a></p>
+          </div>
+        </article>
+
+        <article class="card" id="events" aria-labelledby="eventsHeading">
+          <div class="toolbar">
+            <h3 id="eventsHeading">Events Calendar</h3>
+            <span class="tag">Google Calendar</span>
+          </div>
+          <!-- TODO: Replace the iframe src with your campus Google Calendar public embed URL.
+               How: Google Calendar → Settings → Select calendar → Access permissions → make available to public (or to your org),
+               then "Integrate calendar" → copy the embed URL. -->
+          <iframe class="calendar" id="calendarFrame" title="Campus Calendar"
+                  src="https://calendar.google.com/calendar/embed?src=en.philippines%23holiday%40group.v.calendar.google.com&ctz=Asia%2FManila"></iframe>
+        </article>
+      </div>
+    </section>
+
+    <!-- NEWS -->
+    <section class="section" id="news">
+      <div class="container">
+        <h2>News & Updates</h2>
+        <p class="muted">Stories and highlights from around the campus.</p>
+        <div class="news-grid">
+          <article class="news">
+            <div class="img" role="img" aria-label="Placeholder image"></div>
+            <div class="txt">
+              <small class="muted">Sep 23, 2025</small>
+              <h4>PUP Biñan holds orientation for freshmen</h4>
+              <p>Newly admitted students attended a campus-wide orientation to kickstart AY 2025–2026.</p>
+              <p><a href="#">Read more →</a></p>
+            </div>
+          </article>
+          <article class="news">
+            <div class="img" role="img" aria-label="Placeholder image"></div>
+            <div class="txt">
+              <small class="muted">Sep 19, 2025</small>
+              <h4>IT Department announces week-long tech fair</h4>
+              <p>Talks, workshops, and exhibits showcasing student projects and industry partners.</p>
+              <p><a href="#">Read more →</a></p>
+            </div>
+          </article>
+          <article class="news">
+            <div class="img" role="img" aria-label="Placeholder image"></div>
+            <div class="txt">
+              <small class="muted">Sep 15, 2025</small>
+              <h4>Library extends hours during midterms</h4>
+              <p>Extended operating hours to support students preparing for examinations.</p>
+              <p><a href="#">Read more →</a></p>
+            </div>
+          </article>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer id="contact">
+    <div class="container foot">
+      <div>
+        <h4>About PUP Biñan</h4>
+        <p>PUP Biñan Campus is part of the country's largest state university system, committed to accessible and excellent public higher education.</p>
+      </div>
+      <div>
+        <h4>Contact</h4>
+        <p>Sto. Tomas, Biñan, Laguna<br/>Philippines 4024</p>
+        <p>Email: <a href="mailto:info.binan@pup.edu.ph">info.binan@pup.edu.ph</a><br/>Phone: (xxx) xxx xxxx</p>
+      </div>
+      <div>
+        <h4>Connect</h4>
+        <p><a href="#">Facebook</a> · <a href="#">X</a> · <a href="#">YouTube</a></p>
+        <p><a href="#">Feedback & FAQs</a></p>
+      </div>
+    </div>
+    <div class="container sub">© <span id="year"></span> PUP Biñan Campus. For demo/UI purposes only.</div>
+  </footer>
+
+  <button id="backTop" class="btn" aria-label="Back to top" title="Back to top">↑ Top</button>
+</body>
+</html>

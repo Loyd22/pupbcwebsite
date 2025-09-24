@@ -1,0 +1,199 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>About — PUP Biñan Campus</title>
+
+  <!-- Use your existing CSS & JS (note the ../ because this file is inside /pages) -->
+  <link rel="stylesheet" href="../asset/css/homepage.css" />
+  <script defer src="../asset/js/homepage.js"></script>
+
+  <!-- Page-only tiny styles -->
+  <style>
+    .page-hero{background:#fff;border-bottom:1px solid var(--border)}
+    .page-hero .inner{padding:28px 0}
+    .page-hero h1{margin:0}
+    .content{padding:24px 0}
+    .kv{display:grid;gap:1rem;grid-template-columns:1.1fr .9fr}
+    @media (max-width:920px){.kv{grid-template-columns:1fr}}
+    .values{display:grid;gap:.5rem;grid-template-columns:1fr 1fr}
+    @media (max-width:560px){.values{grid-template-columns:1fr}}
+    .value{padding:.75rem .85rem;background:#fff;border:1px solid var(--border);border-radius:12px}
+  </style>
+</head>
+<body>
+  <a href="#content" class="sr-only">Skip to content</a>
+
+  <!-- Top ribbon -->
+  <div class="topbar" role="banner">
+    <div class="container topbar-inner">
+      <div class="seal" aria-hidden="true">PUP</div>
+      <div class="brand" aria-label="Campus name">
+        <span class="u">POLYTECHNIC UNIVERSITY OF THE PHILIPPINES</span>
+        <span class="c">Biñan Campus</span>
+      </div>
+    </div>
+  </div>
+
+  <!-- Header / Nav -->
+  <header>
+    <div class="container nav">
+      <nav aria-label="Primary" class="menu" id="menu">
+        <a href="../homepage.html">Home</a>
+        <a class="is-active" href="./about.html">About</a>
+        <a href="./programs.html">Academic Programs</a>
+        <a href="./admission_guide.html">Admissions</a>
+        <a href="./services.html">Student Services</a>
+        <a href="./announcement.html">Announcements</a>
+        <a href="./news.html">News</a>
+        <a href="./event.html">Events</a>
+        <a href="./contact.html">Contact</a>
+      </nav>
+      <div class="actions">
+        <button class="hamburger" id="hamburger" aria-label="Open menu" aria-controls="mobilePanel" aria-expanded="false">
+          <span></span><span></span><span></span>
+        </button>
+        <a class="btn" href="#" aria-label="Go to site search">🔎 Search</a>
+        <a class="btn primary" href="./admission_guide.html">Apply Now</a>
+      </div>
+    </div>
+    <div class="mobile-panel" id="mobilePanel" aria-hidden="true">
+      <nav class="mobile-menu" aria-label="Mobile">
+        <a href="../homepage.html">Home</a>
+        <a class="is-active" href="./about.html">About</a>
+        <a href="./programs.html">Academic Programs</a>
+        <a href="./admission_guide.html">Admissions</a>
+        <a href="./services.html">Student Services</a>
+        <a href="./announcement.html">Announcements</a>
+        <a href="./news.html">News</a>
+        <a href="./event.html">Events</a>
+        <a href="./contact.html">Contact</a>
+      </nav>
+    </div>
+  </header>
+
+  <main id="content">
+    <!-- PAGE HERO -->
+    <section class="page-hero">
+      <div class="container inner">
+        <h1>About PUP Biñan Campus</h1>
+        <p class="muted">Brief overview of our history, vision, mission, and values.</p>
+      </div>
+    </section>
+
+    <!-- OVERVIEW + IMAGE -->
+    <section class="content">
+      <div class="container kv">
+        <div class="card">
+          <div class="body">
+            <h2>Campus Overview</h2>
+            <p>PUP Biñan is part of the country’s largest state university system, offering accessible and excellent public higher education in Laguna.</p>
+            <ul>
+              <li><b>Location:</b> Sto. Tomas, Biñan, Laguna</li>
+              <li><b>Focus:</b> Industry-aligned programs and student services</li>
+              <li><b>Community:</b> Students, faculty, staff, partners, and alumni</li>
+            </ul>
+          </div>
+        </div>
+        <div class="card">
+          <div class="body">
+            <!-- Replace with a real campus photo when available -->
+            <img src="../asset/img/hero/campus-placeholder.jpg" alt="PUP Biñan campus (placeholder image)" />
+            <p class="muted" style="margin-top:.5rem">Put a real photo in <code>asset/img/hero/</code> and update the filename here.</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- VISION / MISSION -->
+    <section class="content">
+      <div class="container grid cols-2">
+        <div class="card">
+          <div class="body">
+            <h2>Vision</h2>
+            <p>To be a leading public polytechnic university campus in the region, producing graduates who are competent, ethical, and ready to serve the nation.</p>
+          </div>
+        </div>
+        <div class="card">
+          <div class="body">
+            <h2>Mission</h2>
+            <p>Provide inclusive, high-quality, and industry-relevant education; cultivate research and innovation; and engage communities through meaningful extension services.</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- HISTORY -->
+    <section class="content">
+      <div class="container">
+        <div class="card">
+          <div class="body">
+            <h2>History</h2>
+            <p>Write a short history of PUP Biñan here—founding year, key milestones, and community partnerships. Keep it concise and focused on what makes the campus unique.</p>
+            <ul>
+              <li><b>Year founded:</b> YYYY</li>
+              <li><b>Major milestone:</b> e.g., first batch of graduates, new building, accreditation</li>
+              <li><b>Partnerships:</b> LGU, industry, and academic networks</li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- CORE VALUES -->
+    <section class="content">
+      <div class="container">
+        <h2>Core Values</h2>
+        <div class="values">
+          <div class="value"><b>Integrity</b><br><small class="muted">Upholding honesty and accountability.</small></div>
+          <div class="value"><b>Excellence</b><br><small class="muted">Pursuing high standards in learning and service.</small></div>
+          <div class="value"><b>Service</b><br><small class="muted">Serving the community and the nation.</small></div>
+          <div class="value"><b>Innovation</b><br><small class="muted">Encouraging creative solutions and research.</small></div>
+        </div>
+      </div>
+    </section>
+
+    <!-- CAMPUS LEADERSHIP -->
+    <section class="content">
+      <div class="container">
+        <div class="card">
+          <div class="body">
+            <h2>Campus Leadership</h2>
+            <p>List your campus director and unit heads here (names, positions, optional photos and contacts).</p>
+            <ul>
+              <li><b>Campus Director:</b> Name</li>
+              <li><b>Academic Affairs:</b> Name</li>
+              <li><b>Student Affairs:</b> Name</li>
+              <li><b>Registrar:</b> Name</li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <!-- Footer (same as homepage) -->
+  <footer id="contact">
+    <div class="container foot">
+      <div>
+        <h4>About PUP Biñan</h4>
+        <p>PUP Biñan Campus is part of the country's largest state university system, committed to accessible and excellent public higher education.</p>
+      </div>
+      <div>
+        <h4>Contact</h4>
+        <p>Sto. Tomas, Biñan, Laguna<br/>Philippines 4024</p>
+        <p>Email: <a href="mailto:info.binan@pup.edu.ph">info.binan@pup.edu.ph</a><br/>Phone: (xxx) xxx xxxx</p>
+      </div>
+      <div>
+        <h4>Connect</h4>
+        <p><a href="#">Facebook</a> · <a href="#">X</a> · <a href="#">YouTube</a></p>
+        <p><a href="#">Feedback & FAQs</a></p>
+      </div>
+    </div>
+    <div class="container sub">© <span id="year"></span> PUP Biñan Campus. For demo/UI purposes only.</div>
+  </footer>
+
+  <button id="backTop" class="btn" aria-label="Back to top" title="Back to top">↑ Top</button>
+</body>
+</html>
